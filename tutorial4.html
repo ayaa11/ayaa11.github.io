@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Tutorial</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>	
+		<link href="CSS/style.css" rel="stylesheet" type="text/css">   
+	</head>
+    
+    <body>        
+        <div class="header">
+            <h1>2018-2019 CI347 - Web and network management</h1>
+            <h2>JSON Tutorial</h2>
+        </div>
+
+        <div class="navbar">
+            <a href="index.html">Main</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tutorials</button>
+                <div class="dropdown-content">
+                    <a href="tutorial1.html">Tutorial 1: JSON vs XML</a>
+                    <a href="tutorial2.html">Tutorial 2: JSON Data Types</a>
+                    <a href="tutorial3.html">Tutorial 3: JSON Objects</a>
+                    <a href="">Tutorial 4: JSON Stringify &amp; Parse</a>
+                    <a href="tutorial5.html">Tutorial 5: JSON HTML</a>
+                </div>
+            </div>
+            <a href="Reflection.html">Reflection</a>
+            <a href="Refrences.html">Refrences</a>
+        </div>
+
+   <main>
+       <div id="wrapper">
+       <section>         
+           <article>
+               <header>
+                   <h3>Tutorial 4: JSON Stringify &amp; Parse</h3>
+                   <p class="pu">Published on <time datetime="2018-11-29">November 29, 2018</time></p>
+               </header>
+               <p>There are two useful methods that can be used in JSON which are JSON.Stringify () and JSON.Parse (). They have the opposite way of working, Stringify transforms JavaScript object to JSON string. However, parse transforms JSON string to JavaScript object.</p>
+               
+               <h4>JSON.Stringify()</h4>
+               <p>Transferring information to web server. Here JSON.stringify method transforms any date objects into strings, the code in the image shows the script input.</p>
+               
+               <h5>HTML &amp; JSON input:</h5>
+               <img src="images/T4-1.PNG" alt="example1" class="align-left medium">
+               
+               <h5>Output:</h5>
+               <p id="demoo"></p>
+               <script>
+                   var object = {Name: "Ali", City: "London", Age:"20", Date: new Date()};
+                   var myJSON = JSON.stringify(object);
+                   document.getElementById("demoo").innerHTML = myJSON;
+               </script>
+               
+               
+               <h4>JSON.Parse()</h4>
+               <p>Getting information from web server.Content written as a JSON in array that is transforming into a JavaScript array. It will have the method XMLHttpRequest() to call the text file.</p>
+               
+               <h5>HTML &amp; JSON input:</h5>
+               <img src="images/t4-2.PNG" alt="example2" class="align-left medium">
+               
+               <h5>Output:</h5>
+               <p id="dem"></p>
+               
+               <script>
+                   var xmlhttp = new XMLHttpRequest();
+                   xmlhttp.onreadystatechange = function() {
+                       if (this.readyState == 4 && this.status == 200) {
+                           var myArray = JSON.parse(this.responseText);
+                           document.getElementById("dem").innerHTML = myArray[0];
+                       }
+                   };
+                   xmlhttp.open("GET", "array.txt", true);
+                   xmlhttp.send();
+               </script>
+               
+               <p>Check the file that presents the array in JSON <a href="array.txt" target="_blank">array.txt</a></p>
+               
+               <br/>
+               <h4>Pagination</h4>
+               <p>JSON Tutorials</p>
+               <div class="pagination">
+                       <a href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial1.html">T-1</a>
+                       <a href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial2.html">T-2</a>
+                       <a href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial3.html">T-3</a>
+                       <a class="active" href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial4.html">T-4</a>
+                       <a href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial5.html">T-5</a>
+               </div>
+                          
+           </article>
+                              
+       </section>
+       </div>
+       
+       <div class="ttop">
+           <a href="#"><div class="topp"></div></a>
+       </div>
+       
+       <div class="social">               
+           <a href="https://www.linkedin.com/in/ashwaq-alharbi-3a6791159/"><div class="linkk"></div></a>
+           <a href="https://www.instagram.com/ashwaq1995/"><div class="insta"></div></a>
+           <a href="https://www.facebook.com/ashwag.alharbi.94"><div class="face"></div></a>
+       </div>
+       
+       <div class="footer">
+           <br/>
+           <br/>
+           <small>Copyright &copy; 2018/2019 JSON Tutorial</small>
+           <br/>
+           <button class="button" type="button" onclick="document.getElementById('demo').innerHTML = Date()"><strong>Click to display Date and Time</strong></button>
+           <p id="demo"></p>           
+       </div>      
+        </main>
+
+    </body>
+</html>

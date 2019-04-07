@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Tutorial</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>	
+		<link href="CSS/style.css" rel="stylesheet" type="text/css">   
+	</head>
+    
+    <body>        
+        <div class="header">
+            <h1>2018-2019 CI347 - Web and network management</h1>
+            <h2>JSON Tutorial</h2>
+        </div>
+
+        <div class="navbar">
+            <a href="index.html">Main</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tutorials</button>
+                <div class="dropdown-content">
+                    <a href="tutorial1.html">Tutorial 1: JSON vs XML</a>
+                    <a href="tutorial2.html">Tutorial 2: JSON Data Types</a>
+                    <a href="">Tutorial 3: JSON Objects</a>
+                    <a href="tutorial4.html">Tutorial 4: JSON Stringify &amp; Parse</a>
+                    <a href="tutorial5.html">Tutorial 5: JSON HTML</a>
+                </div>
+            </div>
+            <a href="Reflection.html">Reflection</a>
+            <a href="Refrences.html">Refrences</a>
+        </div>
+
+   <main>
+       <div id="wrapper">
+       <section>        
+           <article>
+               <header>
+                   <h3>Tutorial 3: JSON Objects</h3>
+                   <p class="pu">Published on <time datetime="2018-11-22">November 22, 2018</time></p>
+               </header>
+               <p>Objects in JSON can be written in a specific ways with JavaScript, it has to be begin and end with a curly braces {}. Also, it includes keys which is a string inside and values that has a data type like number, object and etc. Creating an empty Object would has the braces without any datatype such as:</p>
+               <img src="images/t3-1.PNG" alt="example1" class="align-left medium">
+               <p>Writing the JSON codes in JavaScript with a new object will be like this:</p>
+               <img src="images/t3-2.PNG" alt="example2" class="align-left medium">
+               <p>The way of creating an object with attributes of name and age will be similar to this:</p>
+               <img src="images/t3-3.PNG" alt="example3" class="align-left medium">
+               <p>The Keys and values are having a colon to separate them, however each pairs of value and keys are having a comma to separate them as shown in the example. If the programmer would access the object values, it should be written by whether a dot or a square brackets as shown in the examples:</p>
+               <h4>Example (1) with a dot.</h4>
+               <img src="images/t3-4.PNG" alt="example4" class="align-left medium">
+               <h4>Example (2) with a square brackets. </h4>
+               <img src="images/t3-5.PNG" alt="example5" class="align-left medium">
+               <p>In this example it shows looping an object through JSON, the result will have all keys name, age and Favourite colour:</p>
+               <img src="images/t3-6.PNG" alt="example6" class="align-left medium">
+               <p>However, if x written in a bracket notation the values would be the result Ashwaq, 23 and null:</p>
+               <img src="images/t3-7.PNG" alt="example7" class="align-left medium">
+               <p>I had written the examples in <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_parse"> W3school editor</a> then made screenshots</p>
+               
+               <h4>This video is helpful because it is identifying some differences of JavaScript objects and JSON objects.</h4>
+               
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/wTONBRl5ouk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <p>I used the video from <a href="https://www.youtube.com/embed/wTONBRl5ouk"> YuoTube</a></p>
+               
+               
+               <br/>
+               <h4>Pagination</h4>
+               <p>JSON Tutorials</p>
+               <div class="pagination">
+                       <a href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial1.html">T-1</a>
+                       <a href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial2.html">T-2</a>
+                       <a class="active" href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial3.html">T-3</a>
+                       <a href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial4.html">T-4</a>
+                       <a href="http://itsuite.it.bton.ac.uk/ayaa11/CI347/Siteayaa11/tutorial5.html">T-5</a>
+               </div>
+
+               
+           </article>           
+       </section>
+       </div>
+       
+       <div class="ttop">
+           <a href="#"><div class="topp"></div></a>
+       </div>
+       
+       <div class="social">               
+           <a href="https://www.linkedin.com/in/ashwaq-alharbi-3a6791159/"><div class="linkk"></div></a>
+           <a href="https://www.instagram.com/ashwaq1995/"><div class="insta"></div></a>
+           <a href="https://www.facebook.com/ashwag.alharbi.94"><div class="face"></div></a>
+       </div>
+       
+       <div class="footer">
+           <br/>
+           <br/>
+           <small>Copyright &copy; 2018/2019 JSON Tutorial</small>
+           <br/>
+           <button class="button" type="button" onclick="document.getElementById('demo').innerHTML = Date()"><strong>Click to display Date and Time</strong></button>
+           <p id="demo"></p>
+       </div>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,387 @@
+/* CSS */
+body {
+    background-image: url("../images/baaack.jpeg");
+    background-color: linen;
+    font-family: "Times New Roman", Times, serif, sans-serif;
+    margin:50px 500px 80px 180px;
+    font-size: 16px;
+    border:0;
+    display:grid;
+    background-size:cover;
+
+}
+#wrapper {
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: white;
+/*    display: grid;*/
+    object-fit: cover;
+/*    overflow: auto;*/
+}
+div.article {
+  margin: 5px;
+  padding: 20px;
+  background-color: aliceblue;
+}
+p {
+    color: black;
+    text-align: left;
+    margin: 15px;
+} 
+.small {
+  line-height: 2;
+    color: purple;
+    font-size: 12px;
+    margin-right: 400px;
+    text-align: center;
+    
+}
+p.pu {
+    font-size: 13px;
+}
+article {
+    background-color: white;
+    padding: 0.4em;
+    width: 98%; 
+    margin-top: 1em;
+    margin: 10px;
+}
+
+main {
+}
+
+
+/* Style the header */
+.header {
+    max-width: 100%;
+    background-image: url("../images/baaack.jpeg");
+    padding: 40px;
+    text-align: center;
+    color: darkblue;
+    background-color: white;
+    display: grid;
+    box-shadow: 0 0 2px rgba(0, 0, 4, 0.06);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 30px;
+    margin: 8px;
+}
+h2 {
+  color: black;
+    margin: 10px;
+}
+h3 {
+  color: darkslateblue;
+    margin: 10px;
+}
+h4 {
+    font-size: 18px;
+  color: darkslateblue;
+    margin: 10px;
+}
+h5 {
+    font-size:20px;
+    color: darkslateblue;
+    margin: 10px;
+}
+
+.article li {
+    text-align: left;
+    margin: 10px;
+    padding: 0.2em;
+}
+
+/* Style the navigation bar links for menu*/
+.navbar {
+    display: flex;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float:right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    text-align: center;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: gainsboro;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the div*/
+div {
+    border: 2px solid black;
+}
+
+/* Tables */
+th, td, p, input {
+    font:14px Verdana;
+}
+table, th, td 
+{
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+th {
+    font-weight:bold;
+}
+
+/* Images */
+
+.img.align-left-3 {
+    float: inherit;
+    margin: 0px auto;
+    line-height: 1.5;
+}
+.img.medium-3 {
+    width: 430px;
+    height: 180px;
+}
+/* Video */
+
+iframe	{
+  max-width: 90%;
+    min-width: 40%;
+  max-height: 70;
+}
+
+/* Footer*/
+.footer {
+    background-image:  url("../images/baaack.jpeg");
+    background-color: #F1F1F1;
+    text-align: left;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 15%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+.ttop {
+    background-color: gainsboro;
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 4px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 12px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+
+/* flexible */
+img, video, canvas {
+  max-width: 100%;
+}
+
+.banner {
+    background-color:#FFF; /*Fallback – solid colour*/
+/*    background-image:url(images/banner.png);*/
+    background-repeat:no-repeat;
+    width: 100%;
+    overflow: hidden; 
+}
+
+/* pagination */
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: lightblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* Socialising */
+
+.social a { 
+    float:left; 
+    margin-right:10px;
+}
+.insta {
+    width:30px;
+    height:30px;
+    background:url('../images/insta.png');
+}
+.insta:hover {
+    background:url('../images/insta.png');
+}
+.face { 
+    width:30px;
+    height:30px; 
+    background:url('../images/face.png');
+}
+.face:hover {
+    background:url('../images/face.png');
+}
+.linkk { 
+    width:30px;
+    height:30px; 
+    background:url('../images/link.png');
+}
+.linkk:hover {
+    background:url('../images/link.png');
+}
+/*
+.email { 
+    width:30px;
+    height:30px; 
+    background:url('../images/email.png');
+}
+.email:hover {
+    background:url('../images/email.png');
+}
+*/
+.topp { 
+    width:40px;
+    height:40px; 
+    background:url('../images/go-top.png');
+}
+.topp:hover {
+    background:url('../images/go-top.png');
+}
+
+/* stuyling links */
+/*screen media*/
+aside {
+}
+
+/*screen media */
+
+@media (min width: 55em) 
+{ 
+    main
+    { 
+        float: left;
+        width: 65%;
+        margin-right: 3%;
+        border-right: 1px solid #000;
+    }
+    aside
+    {
+        width: 10%;
+    }
+    .menu li {
+        display: inline;
+        margin: 2em;
+    }
+    .menu a {
+        display: inline;
+        padding: .5em;
+        border-bottom: 0;
+    }
+}
+
+/*
+@media screen and (min-width: 320px) 
+{
+    body { color: #000;}
+}
+
+@media screen and (max-device-width: 480px)
+{
+    
+}*/
+@media screen and (max-width: 600px) {
+    main{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 480px) {
+  #navbar {
+      width: 200px;
+      float: left;
+    }
+  #main {
+      margin-left: 100px;
+    }
+}
+
+
+/*960 px* - tablet landscape orientation and above - 3 columns*/
+
+@media screen and (min-width: 60em) 
+{
+.media-item	{ width: 39.99%; }
+    main {
+        float: left;
+        width: 100%;
+}
+    .media-content {
+	   background-color: white;
+	   display: grid;
+	   flex-direction: column;
+	   padding: 1.6em;
+	   width: 50%;
+}
+    .media {
+	   margin: 0;
+	   padding: 0;
+       float: inherit;
+}
+    .media li	{
+	   margin: 0;
+	   padding: 0;
+}
